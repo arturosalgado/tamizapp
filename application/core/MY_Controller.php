@@ -8,7 +8,8 @@ class MY_Controller extends CI_Controller
     
     protected $data = array();
     protected $view = 'list';
-    
+    protected $id = null;
+            
     function __construct() {
         parent::__construct();
     }
@@ -32,5 +33,6 @@ class MY_Controller extends CI_Controller
         
     }
     
+   
     
 }

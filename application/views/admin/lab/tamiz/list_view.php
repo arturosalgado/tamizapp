@@ -73,8 +73,8 @@
 											<tbody>
 											<?php foreach($all as $record): ?>	
 												<tr>
-                                                                                                    <td><a href="<?php echo site_url("/tamiz/form/{$record->id}") ?>"  ><?php echo $record->id; ?></a></td>
-                                                                                                        <td><a href="<?php echo site_url("/tamiz/form/{$record->id}") ?>"  ><?php echo $record->nombre_completo() ?> </a></td>
+                                                                                                    <td><a href="<?php echo site_url("/lab/tamiz/form/{$record->id}") ?>"  ><?php echo $record->id; ?></a></td>
+                                                                                                        <td><a href="<?php echo site_url("/lab/tamiz/form/{$record->id}") ?>"  ><?php echo $record->nombre_completo() ?> </a></td>
                                                                                                         <td style="width:200px" align="center"><?php echo $record->getFechadenacimiento();?></td>
 													<td align="center"><?php echo $record->getToma();?></td>
 													

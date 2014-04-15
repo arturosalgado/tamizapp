@@ -48,11 +48,37 @@
 $active_group = 'default';
 $active_record = TRUE;
 
+//echo $_SERVER['SERVER_NAME'];
+if ($_SERVER['SERVER_NAME']=='localhost')
+{
+    $active_group = 'default';
+    
+}
+else
+    $active_group = 'dev';
+
+$db['dev']['hostname'] = 'localhost';
+$db['dev']['username'] = 'walkleyc_tamiz';
+$db['dev']['password'] = 'tamiz';
+$db['dev']['database'] = 'walkleyc_tamiz';
+$db['dev']['dbdriver'] = 'mysqli';
+$db['dev']['dbprefix'] = '';
+$db['dev']['pconnect'] = TRUE;
+$db['dev']['db_debug'] = TRUE;
+$db['dev']['cache_on'] = FALSE;
+$db['dev']['cachedir'] = '';
+$db['dev']['char_set'] = 'utf8';
+$db['dev']['dbcollat'] = 'utf8_general_ci';
+$db['dev']['swap_pre'] = '';
+$db['dev']['autoinit'] = TRUE;
+$db['dev']['stricton'] = FALSE;
+
+
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
+$db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['database'] = 'tamiz';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

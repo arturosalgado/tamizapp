@@ -200,7 +200,15 @@
 							</li>
 						</ul>
 					</li>
-					
+					<li>
+						<a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Vista Laboratorio</span></a>
+						<ul>
+							<li>
+                                                            <a href="<?php echo site_url("/lab/tamiz") ?>">Listado</a>
+							</li>
+							
+						</ul>
+					</li>
 					
 			
 					<li>
@@ -228,7 +236,7 @@
 
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>Inicio</li><li>Tablero</li>
+					<!--li>Inicio</li><li>Tablero</li-->
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -247,7 +255,7 @@
 			<!-- END RIBBON -->
 
 			<!-- MAIN CONTENT -->
-                        <div id="content" style="border:2px solid red">
+                        <div id="content" >
 
 			{main_content}
 
@@ -367,6 +375,10 @@
 		<!-- Full Calendar -->
 		<script src="<?php echo base_url('themes/admin') ?>/js/plugin/fullcalendar/jquery.fullcalendar.min.js"></script>
 
+                <script src="<?php echo base_url('themes/admin') ?>/js/plugin/jquery-form/jquery-form.min.js"></script>
+
+                
+                
 		<script>
 			$(document).ready(function() {
 
@@ -868,12 +880,18 @@
 				$.chat_body.animate({
 					scrollTop : $.chat_body[0].scrollHeight
 				}, 500);
+                                
+                                
+                                
+                            
+                                
 
 			});
 
 		</script>
 
-		
+               
+              
 		
 
 	</body>

@@ -20,7 +20,7 @@ class tamiz extends MY_Controller{
       // print_r($record);
        
        $this->data['record']=$t;    
-       return  $this->load->view("admin/tamiz/form",  $this->data,true);     
+       return  $this->load->view("admin/lab/tamiz/form",  $this->data,true);     
        }
        else
        {    
@@ -28,7 +28,7 @@ class tamiz extends MY_Controller{
            $t->get();
            $all = $t->all;
            $this->data['all']=$all;
-           return  $this->load->view("admin/tamiz/list_view",  $this->data,true);  
+           return  $this->load->view("admin/lab/tamiz/list_view",  $this->data,true);  
         
        } 
         
@@ -49,8 +49,8 @@ class tamiz extends MY_Controller{
         $t = new TamizModel($id);
         
         
-        $_POST['fechadenacimiento']= $this->formatdate($_POST['fechadenacimiento']);
-        $_POST['fechademuestra']= $this->formatdate($_POST['fechademuestra']);
+     //   $_POST['fechadenacimiento']= $this->formatdate($_POST['fechadenacimiento']);
+      //  $_POST['fechademuestra']= $this->formatdate($_POST['fechademuestra']);
       
       
         
@@ -60,7 +60,7 @@ class tamiz extends MY_Controller{
             $t->$key = $this->input->post($key);
         }
         $t->save();
-        redirect(site_url("/tamiz/"));
+        redirect(site_url("/lab/tamiz/"));
         
     }
     

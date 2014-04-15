@@ -352,7 +352,7 @@
 											</li>
 										</ul>
 
-										<h5 class="todo-group-title"><i class="fa fa-check"></i> Completed Tasks (<small class="num-of-tasks">1</small>)</h5>
+										<h5 class="todo-group-title"><i class="fa fa-check"></i> Completadas (<small class="num-of-tasks">1</small>)</h5>
 										<ul id="sortable3" class="todo">
 											<li class="complete">
 												<span class="handle" style="display:none"> <label class="checkbox state-disabled">
